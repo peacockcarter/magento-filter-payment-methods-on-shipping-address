@@ -45,5 +45,6 @@ Not a problem, just create a module and add the filter fields to your system.xml
 
 ```
 
-Ensure that the group is named the same as the payment method code e.g. authorizenet
+Ensure that the group is named the same as the payment method code e.g. authorizenet.
+
 Don't change the field names (i.e. shippingbased and specificshippingcountry), the observer uses these to get your settings from the database.
