@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Peacock_FilterPaymentMethodsOnShippingAddress>
+            <version>1.0.0</version>
+        </Peacock_FilterPaymentMethodsOnShippingAddress>
+    </modules>
+    <global>
+        <models>
+            <peacock_filterpaymentmethodsonshippingaddress>
+                <class>Peacock_FilterPaymentMethodsOnShippingAddress_Model</class>
+            </peacock_filterpaymentmethodsonshippingaddress>
+        </models>
+        <events>
+            <payment_method_is_active>
+                <observers>
+                    <disable_cod_on_shipping_address>
+                        <class>Peacock_FilterPaymentMethodsOnShippingAddress_Model_Observer</class>
+                        <method>shippingBasedPaymentMethod</method>
+                    </disable_cod_on_shipping_address>
+                </observers>
+            </payment_method_is_active>
+        </events>
+    </global>
+    <default>
+        <payment>
+            <ccsave>
+                <shippingbased>0</shippingbased>
+            </ccsave>
+            <checkmo>
+                <shippingbased>0</shippingbased>
+            </checkmo>
+            <free>
+                <shippingbased>0</shippingbased>
+            </free>
+            <purchaseorder>
+                <shippingbased>0</shippingbased>
+            </purchaseorder>
+            <banktransfer>
+                <shippingbased>0</shippingbased>
+            </banktransfer>
+            <cashondelivery>
+                <shippingbased>0</shippingbased>
+            </cashondelivery>
+        </payment>
+    </default>
+</config>

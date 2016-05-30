@@ -1,0 +1,36 @@
+{
+  "name": "PeacockCarter/FilterPaymentOnShippingAddress",
+  "type": "magento-module",
+  "license": "OSL-3.0",
+  "homepage": "https://peacock-carter/magento-filter-payment-methods-on-shipping-address",
+  "description": "Filter payment methods based on shipping country.",
+  "authors": [
+    {
+      "name": "Richie McFarlane - @weaves81",
+      "email": "dev@peacockcarter.co.uk"
+    }
+  ],
+  "extra": {
+    "map": [
+      [
+        "app/etc/modules/FilterPaymentOnShippingAddress.xml",
+        "app/etc/modules/FilterPaymentOnShippingAddress.xml"
+      ],
+      [
+        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/config.xml",
+        "app/code/local/PeacockCarter/FilterPaymentOnShippingAddress/etc/config.xml"
+      ],
+      [
+        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/system.xml",
+        "app/code/local/PeacockCarter/FilterPaymentOnShippingAddress/etc/system.xml"
+      ],
+      [
+        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/Model/Observer.php",
+        "app/code/local/PeacockCarter/FilterPaymentOnShippingAddress/Model/Observer.php"
+      ]
+    ]
+  },
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  }
+}
