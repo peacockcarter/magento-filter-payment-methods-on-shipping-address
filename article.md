@@ -55,6 +55,7 @@ If yes then multi select of countries, Allowed Shipping Countries, would be show
 ```
  
 With this data saved into the database it was possible to use the "payment_method_is_active" event in Magento to filter the payment options based on the shipping address.
+
 The basic config xml for this module is as follows;
 
 * Define the module and version
@@ -83,7 +84,7 @@ The basic config xml for this module is as follows;
                     </disable_cod_on_shipping_address>
                 </observers>
             </payment_method_is_active>
-        </events
+        </events>
     </global>
 </config>
 ```
@@ -92,18 +93,25 @@ When the event is fired we get the payment method code. Check if it is enabled a
 Then we get the allowed countries and set the method visibility, true or false.
 
 ```php
-public function shippingBasedPaymentMethod(Varien_Event_Observer $observer)
+class PeacockCarter_FilterPaymentMethodsOnShippingAddress_Model_Observer
 {
-    $paymentMethodCode = $this->getPaymentMethodCode($observer);
+    ...
 
-    if (! $this->isPaymentFilterEnabled($paymentMethodCode) || ! $this->doesQuoteExist($observer)) {
-
-        return;
+    public function shippingBasedPaymentMethod(Varien_Event_Observer $observer)
+    {
+        $paymentMethodCode = $this->getPaymentMethodCode($observer);
+    
+        if (! $this->isPaymentFilterEnabled($paymentMethodCode) || ! $this->doesQuoteExist($observer)) {
+    
+            return;
+        }
+    
+        $this->setAllowedCountriesForMethod($paymentMethodCode);
+    
+        $this->setMethodVisibility($observer);
     }
-
-    $this->setAllowedCountriesForMethod($paymentMethodCode);
-
-    $this->setMethodVisibility($observer);
+    
+    ...
 }
 ```
 
