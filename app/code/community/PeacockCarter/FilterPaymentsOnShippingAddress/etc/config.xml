@@ -27,21 +27,21 @@
  -->
 <config>
     <modules>
-        <Peacock_FilterPaymentMethodsOnShippingAddress>
+        <PeacockCarter_FilterPaymentMethodsOnShippingAddress>
             <version>1.0.0</version>
-        </Peacock_FilterPaymentMethodsOnShippingAddress>
+        </PeacockCarter_FilterPaymentMethodsOnShippingAddress>
     </modules>
     <global>
         <models>
-            <peacock_filterpaymentmethodsonshippingaddress>
-                <class>Peacock_FilterPaymentMethodsOnShippingAddress_Model</class>
-            </peacock_filterpaymentmethodsonshippingaddress>
+            <peacockcarter_filterpaymentmethodsonshippingaddress>
+                <class>PeacockCarter_FilterPaymentMethodsOnShippingAddress_Model</class>
+            </peacockcarter_filterpaymentmethodsonshippingaddress>
         </models>
         <events>
             <payment_method_is_active>
                 <observers>
                     <disable_cod_on_shipping_address>
-                        <class>Peacock_FilterPaymentMethodsOnShippingAddress_Model_Observer</class>
+                        <class>PeacockCarter_FilterPaymentMethodsOnShippingAddress_Model_Observer</class>
                         <method>shippingBasedPaymentMethod</method>
                     </disable_cod_on_shipping_address>
                 </observers>

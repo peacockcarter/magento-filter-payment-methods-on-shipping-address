@@ -13,8 +13,8 @@
   "extra": {
     "map": [
       [
-        "app/etc/modules/FilterPaymentOnShippingAddress.xml",
-        "app/etc/modules/FilterPaymentOnShippingAddress.xml"
+        "app/etc/modules/PeacockCarter_FilterPaymentOnShippingAddress.xml",
+        "app/etc/modules/PeacockCarter_FilterPaymentOnShippingAddress.xml"
       ],
       [
         "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/config.xml",

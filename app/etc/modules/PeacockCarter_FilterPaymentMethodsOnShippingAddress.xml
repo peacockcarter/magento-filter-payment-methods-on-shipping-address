@@ -27,12 +27,12 @@
 -->
 <config>
     <modules>
-        <Peacock_FilterPaymentMethodsOnShippingAddress>
+        <PeacockCarter_FilterPaymentMethodsOnShippingAddress>
             <active>true</active>
             <codePool>community</codePool>
             <depends>
                 <Mage_Sales/>
             </depends>
-        </Peacock_FilterPaymentMethodsOnShippingAddress>
+        </PeacockCarter_FilterPaymentMethodsOnShippingAddress>
     </modules>
 </config>
