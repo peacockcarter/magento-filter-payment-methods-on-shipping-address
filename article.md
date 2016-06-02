@@ -25,6 +25,7 @@ Limit by Shipping Address using the adminhtml/system_config_source_yesno method 
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </shippingbased>
+                        ...
 ```
 
 If yes then multi select of countries, Allowed Shipping Countries, would be shown.
@@ -52,6 +53,7 @@ If yes then multi select of countries, Allowed Shipping Countries, would be show
                                 <shippingbased>1</shippingbased>
                             </depends>
                         </specificshippingcountry>
+                        ...
 ```
  
 With this data saved into the database it was possible to use the "payment_method_is_active" event in Magento to filter the payment options based on the shipping address.
@@ -178,4 +180,4 @@ In this case the code would be **braintree_basic**
 
 That's it, hope this is helpful for someone. Any suggestions / bugfixes welcome.
 
-[You can get the full plugin code here [PeacockCarter Filter Billing Options By Shipping Address](http://github.com/peacockcarter/.....)
+You can get the full plugin code here [PeacockCarter Filter Billing Options By Shipping Address](http://github.com/peacockcarter/.....)
