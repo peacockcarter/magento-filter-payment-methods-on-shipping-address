@@ -18,15 +18,15 @@
       ],
       [
         "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/config.xml",
-        "app/code/local/PeacockCarter/FilterPaymentOnShippingAddress/etc/config.xml"
+        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/config.xml"
       ],
       [
         "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/system.xml",
-        "app/code/local/PeacockCarter/FilterPaymentOnShippingAddress/etc/system.xml"
+        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/system.xml"
       ],
       [
         "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/Model/Observer.php",
-        "app/code/local/PeacockCarter/FilterPaymentOnShippingAddress/Model/Observer.php"
+        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/Model/Observer.php"
       ]
     ]
   },
