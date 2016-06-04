@@ -106,8 +106,9 @@ class PeacockCarter_FilterPaymentMethodsOnShippingAddress_Model_Observer
     private function setMethodVisibility(Varien_Event_Observer $observer)
     {
         $result = $observer->getEvent()->getResult();
-
-        $result->isAvailable = $this->isCountryAllowed();
+        if ($result->isAvailable) {
+            $result->isAvailable = $this->isCountryAllowed();
+        }
     }
 
     /**
