@@ -1,4 +1,4 @@
-# Magento 1.x - Filter Payment methods on Shipping Address
+# Magento 1.x - Filter Payment Methods on Shipping Address
 
 Adds the ability to filter core payment methods based on shipping country in Magento 1.x
 Can still filter on billing country, or both if required.
