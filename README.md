@@ -49,4 +49,4 @@ Ensure that the group is named the same as the payment method code e.g. authoriz
 
 Don't change the field names (i.e. shippingbased and specificshippingcountry), the observer uses these to get your settings from the database.
 
-Tested on Magento CE1.9 and EE1.1.4
+Tested on Magento CE1.9 and EE1.14
