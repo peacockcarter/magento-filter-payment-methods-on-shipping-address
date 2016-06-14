@@ -1,6 +1,6 @@
-# Filter Payment methods on Shipping Address
+# Magento 1.x - Filter Payment methods on Shipping Address
 
-Adds the ability to filter core payment methods based on shipping country.
+Adds the ability to filter core payment methods based on shipping country in Magento 1.x
 Can still filter on billing country, or both if required.
 
 Using a none core payment method? 
@@ -48,3 +48,5 @@ Not a problem, just create a module and add the filter fields to your system.xml
 Ensure that the group is named the same as the payment method code e.g. authorizenet.
 
 Don't change the field names (i.e. shippingbased and specificshippingcountry), the observer uses these to get your settings from the database.
+
+Tested on Magento CE1.9 and EE1.1.4
