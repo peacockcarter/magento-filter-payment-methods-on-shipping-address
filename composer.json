@@ -1,5 +1,5 @@
 {
-  "name": "PeacockCarter/FilterPaymentOnShippingAddress",
+  "name": "PeacockCarter/FilterPaymentMethodsOnShippingAddress",
   "type": "magento-module",
   "license": "OSL-3.0",
   "homepage": "https://peacock-carter/magento-filter-payment-methods-on-shipping-address",
@@ -13,20 +13,20 @@
   "extra": {
     "map": [
       [
-        "app/etc/modules/PeacockCarter_FilterPaymentOnShippingAddress.xml",
-        "app/etc/modules/PeacockCarter_FilterPaymentOnShippingAddress.xml"
+        "app/etc/modules/PeacockCarter_FilterPaymentMethodsOnShippingAddress.xml",
+        "app/etc/modules/PeacockCarter_FilterPaymentMethodsOnShippingAddress.xml"
       ],
       [
-        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/config.xml",
-        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/config.xml"
+        "app/code/community/PeacockCarter/FilterPaymentMethodsOnShippingAddress/etc/config.xml",
+        "app/code/community/PeacockCarter/FilterPaymentMethodsOnShippingAddress/etc/config.xml"
       ],
       [
-        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/system.xml",
-        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/etc/system.xml"
+        "app/code/community/PeacockCarter/FilterPaymentMethodsOnShippingAddress/etc/system.xml",
+        "app/code/community/PeacockCarter/FilterPaymentMethodsOnShippingAddress/etc/system.xml"
       ],
       [
-        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/Model/Observer.php",
-        "app/code/community/PeacockCarter/FilterPaymentOnShippingAddress/Model/Observer.php"
+        "app/code/community/PeacockCarter/FilterPaymentMethodsOnShippingAddress/Model/Observer.php",
+        "app/code/community/PeacockCarter/FilterPaymentMethodsOnShippingAddress/Model/Observer.php"
       ]
     ]
   },
